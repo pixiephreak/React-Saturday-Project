@@ -18,9 +18,31 @@ class Main extends Component {
   // }
   render() {
     return(
-      <div>
-        <h1>GitHubster</h1>
-        <ListContainer/>
+      // <div>
+      //   <h1>GitHubster</h1>
+      //   <ListContainer/>
+      // </div>
+      <div className="container">
+        {/* <!--Page Header--> */}
+        <div className="row">
+          <div className="col-md-12">
+            <div className="page-header">
+              <h1>Github Project Profile Viewer</h1>
+            </div>
+            {/* <!--Search--> */}
+            <div className="row">
+              <div className="col-md-12">
+                  <div className="input-group input-group-lg">
+                      <input type="text" className="form-control" placeholder="Search" aria-describedby="basic-addon1" />
+                  </div>
+              </div>
+            </div>
+            {/* <!--List Container--> */}
+            <div className="row">
+                <ListContainer />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
