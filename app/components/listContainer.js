@@ -2,32 +2,21 @@ import React, { Component } from "react";
 import listItem from './listItem';
 
 
-class listContainer extendes Component {
+    const profiles = (props) => {
 
-  constructor(){
-    super();
-
-    this.state = {
-      repos
-    };
-  }
-  renderListItems(){
-
-    const profiles = this.state.repos;
-
-    return profiles.map(item => (
-      <listItem>
-        {item.userName}
-        {item.publicRepos}
-        {item.followers}
-      </listItem>
-    ));
+      return profiles.map(item => (
+        <listItem>
+          {item.props.userName}
+          {item.props.publicRepos}
+          {item.props.followers}
+        </listItem>
+      ));
   }
 
   render(){
     return(
       <div>
-        
+
       </div>
     )
   }
