@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import ListContainer from './ListContainer';
 
+
 // here is where the header and input box go
 class Main extends Component {
   constructor() {
@@ -18,7 +19,7 @@ class Main extends Component {
   render() {
     return(
       <div>
-        <h1>Title of the App</h1>
+        <h1>GitHubster</h1>
         <ListContainer/>
       </div>
     );
