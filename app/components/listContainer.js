@@ -13,15 +13,15 @@ class ListContainer extends Component {
   }
   renderListItems(){
 
-    const profiles = this.state.repos;
+    const profiles = (props) => {
 
-    return profiles.map(item => (
-      <listItem>
-        {item.userName}
-        {item.publicRepos}
-        {item.followers}
-      </listItem>
-    ));
+      return profiles.map(item => (
+        <listItem>
+          {item.props.userName}
+          {item.props.publicRepos}
+          {item.props.followers}
+        </listItem>
+      ));
   }
 
   render(){
