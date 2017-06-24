@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import listItem from './listItem';
 
 
-class listContainer extendes Component {
+class ListContainer extends Component {
 
   constructor(){
     super();
 
     this.state = {
-      repos
+      //
     };
   }
   renderListItems(){
@@ -27,8 +27,10 @@ class listContainer extendes Component {
   render(){
     return(
       <div>
-        
+
       </div>
     )
   }
 }
+
+export default ListContainer
